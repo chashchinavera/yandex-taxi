@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 import { font } from './fonts';
 import "./globals.css";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Yandex Taxi",
   description: "Вызов такси с наилучшим маршрутом",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
     <html lang="ru">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        {children}
+      </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
