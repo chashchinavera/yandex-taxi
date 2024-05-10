@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ReactNode } from "react";
 import Head from "next/head";
+import FaviconIcon from '../../assets/images/favicon.png'
 
 interface LayoutProps {
     title: string;
@@ -24,6 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
         <div>
             <Head>
                 <title>{title} | Yandex Taxi</title>
+                <link rel='shortcut icon' href={FaviconIcon.src} type="image/png" />
             </Head>
         </div>
     )
