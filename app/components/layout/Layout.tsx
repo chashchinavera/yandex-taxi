@@ -25,7 +25,6 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
         <div>
             <Head>
                 <title>{title} | Yandex Taxi</title>
-                <link rel='shortcut icon' href={FaviconIcon.src} type="image/png" />
                 <meta name="description" content="Taxi App" />
             </Head>
         </div>
