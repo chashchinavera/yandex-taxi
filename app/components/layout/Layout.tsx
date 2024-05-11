@@ -31,7 +31,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
 
             <Script
                 strategy='beforeInteractive'
-                src={``}
+                src={`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&libraries=places`}
             />
         </div>
     )
