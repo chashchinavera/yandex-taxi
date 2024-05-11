@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ReactNode } from "react";
 import Head from "next/head";
-import FaviconIcon from '../../assets/images/favicon.png'
+import Script from "next/script";
+
 
 interface LayoutProps {
     title: string;
@@ -27,6 +28,11 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
                 <title>{title} | Yandex Taxi</title>
                 <meta name="description" content="Taxi App" />
             </Head>
+
+            <Script
+                strategy='beforeInteractive'
+                src={``}
+            />
         </div>
     )
 };
