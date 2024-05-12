@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Script from "next/script";
-import Loader from "../src/components/ui/Loader/Loader";
+import Loader from "../shared/ui/Loader/Loader";
 import { ReactNode } from "react";
 
 
