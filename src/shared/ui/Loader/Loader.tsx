@@ -1,7 +1,6 @@
 import Image from "next/image";
 import preloaderImage from '../../images/preloader.png';
 
-
 const Loader = () => {
     return (
         <div className="w-screen h-screen">
