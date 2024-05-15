@@ -12,7 +12,7 @@ const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
   return (
     <html lang="ru">
       <body className={font.className}>
-        <main>{children}</main>
+        <main className="mx-auto">{children}</main>
       </body>
     </html>
   );
