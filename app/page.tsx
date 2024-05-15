@@ -3,14 +3,9 @@
 import React, { useEffect, useState } from "react";
 import Script from "next/script";
 import Loader from "../src/shared/ui/Loader/Loader";
-import { ReactNode } from "react";
 
 
-interface LayoutProps {
-  children: ReactNode;
-};
-
-const Page: React.FC<LayoutProps> = ({ children }) => {
+const Page: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -31,8 +26,9 @@ const Page: React.FC<LayoutProps> = ({ children }) => {
       />
 
       <div style={{width: '100vw', height: '100vh'}} className="mx-auto relative overflow-hidden">
-        {isLoading ? <Loader /> : children}
+        {isLoading ? <Loader /> : ''}
       </div>
+
     </div>
   )
 };
